@@ -26,6 +26,7 @@ makedepends=(
 	'git'
 	'vulkan-headers'
 	'opencl-headers'
+	'rust'
 )
 source=("obs-localvocal-git::git+https://github.com/royshil/obs-localvocal.git")
 sha256sums=('SKIP')
