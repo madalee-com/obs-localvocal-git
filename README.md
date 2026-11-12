@@ -14,18 +14,21 @@ obs-localvocal is an OBS Studio plugin that provides **real-time Whisper transcr
 
 ## Requirements
 
-This package requires the following dependencies to be installed first:
+The following dependencies are declared in the PKGBUILD and will be **installed automatically** by `makepkg -si`:
 
-| Category | Packages |
-|----------|----------|
-| Runtime  | `obs-studio`, `qt6-base`, `curl`, `icu`, `openblas`, `vulkan-icd-loader`, `ocl-icd` |
-| Build    | `cmake>=3.28`, `ninja`, `ccache`, `pkgconf`, `qt6-svg`, `simde`, `patchelf`, `git` |
+| Type | Packages |
+|------|----------|
+| Runtime (after install) | `obs-studio`, `qt6-base`, `curl`, `icu`, `openblas`, `vulkan-icd-loader`, `ocl-icd` |
+| Build (during compile) | `cmake>=3.28`, `ninja`, `ccache`, `pkgconf`, `qt6-svg`, `simde`, `patchelf`, `git` |
 
-On a minimal Arch system you can install them with:
-
-```bash
-sudo pacman -S obs-studio qt6-base curl icu openblas vulkan-icd-loader ocl-icd cmake ninja ccache pkgconf qt6-svg simde patchelf git
-```
+> [!TIP]
+> If you prefer to install build dependencies manually first, use:
+>
+> ```bash
+> sudo pacman -S obs-studio qt6-base curl icu openblas vulkan-icd-loader ocl-icd cmake ninja ccache pkgconf qt6-svg simde patchelf git
+> ```
+>
+> Then run `makepkg -i` (without `-s`) to build and install.
 
 ## Installation
 
