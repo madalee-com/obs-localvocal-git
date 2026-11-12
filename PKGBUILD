@@ -25,6 +25,7 @@ makedepends=(
 	'patchelf'
 	'git'
 	'vulkan-headers'
+	'opencl-headers'
 )
 source=("obs-localvocal-git::git+https://github.com/royshil/obs-localvocal.git")
 sha256sums=('SKIP')
@@ -46,9 +47,13 @@ prepare() {
 build() {
 	cd "${pkgname}"
 	# Use the project's linux-x86_64 preset (Ninja, RelWithDebInfo, system curl/icu).
+	# -Wno-non-target-directive suppresses CMake 4 warnings about add_compile_options/add_compile_definitions.
+	# -Wno-author suppresses developer-specific warnings.
 	cmake -B build_x86_64 --preset linux-x86_64 \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_INSTALL_LIBDIR=lib
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-Wno-non-target-directive \
+		-Wno-author
 	cmake --build build_x86_64
 }
 
