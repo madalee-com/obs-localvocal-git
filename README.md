@@ -69,8 +69,6 @@ cd obs-localvocal-git
 makepkg -si
 ```
 
-(Or if using yay: `yay -S obs-localvocal-git` will rebuild automatically when upstream changes.)
-
 ## Uninstall
 
 ```bash
