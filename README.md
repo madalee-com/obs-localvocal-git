@@ -6,7 +6,7 @@ obs-localvocal is an OBS Studio plugin that provides **real-time Whisper transcr
 
 ## ⚠️ Disclaimer
 
-This package was **built using a local AI agent** (DeepSeek Harness / Kwaipilot_KAT-Coder-V2) and has **not been fully vetted**. Use at your own risk:
+This package was **built using a local AI agent** and has **not been fully vetted**. Use at your own risk:
 
 - The build patches CMake 4.x compatibility issues in the upstream source.
 - Dependencies and install paths were reverse-engineered from the project's CI configuration.
