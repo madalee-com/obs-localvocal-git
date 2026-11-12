@@ -1,0 +1,23 @@
+pkgname = obs-localvocal
+pkgver = 0.6.2
+pkgrel = 1
+pkgdesc = OBS Studio plugin for real-time Whisper transcription and translation
+url = https://github.com/royshil/obs-localvocal
+arch = x86_64
+license = GPL-2.0-or-later
+depends = obs-studio
+depends = qt6-base
+depends = curl
+depends = icu
+depends = openblas
+depends = vulkan-icd-loader
+depends = ocl-icd
+makedepends = cmake>=3.28
+makedepends = ninja
+makedepends = ccache
+makedepends = pkgconf
+makedepends = qt6-svg
+makedepends = simde
+makedepends = patchelf
+source = https://github.com/royshil/obs-localvocal/releases/download/0.6.2/obs-localvocal-0.6.2-source.tar.xz
+sha256sums = 8886f6fa65c54f4640417c830392a62eebcdd4ec0f6be67b889ff21974bcb679
