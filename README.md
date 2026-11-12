@@ -42,15 +42,7 @@ git clone https://github.com/madalee-com/obs-localvocal-git.git && cd obs-localv
 
 `makepkg -si` builds the package (`-s` pulls missing build deps from pacman, `-i` installs it after building).
 
-### Option 2: Via an AUR helper (yay)
-
-If you use [yay](https://github.com/Jguer/yay), you can install directly from this repo:
-
-```bash
-yay -S git+https://github.com/madalee-com/obs-localvocal-git.git
-```
-
-### Option 3: Manual AUR workflow
+### Option 2: Manual AUR workflow
 
 ```bash
 # Clone the package build files
