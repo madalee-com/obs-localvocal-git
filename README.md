@@ -19,13 +19,13 @@ The following dependencies are declared in the PKGBUILD and will be **installed 
 | Type | Packages |
 |------|----------|
 | Runtime (after install) | `obs-studio`, `qt6-base`, `curl`, `icu`, `openblas`, `vulkan-icd-loader`, `ocl-icd` |
-| Build (during compile) | `cmake>=3.28`, `ninja`, `ccache`, `pkgconf`, `qt6-svg`, `simde`, `patchelf`, `git` |
+| Build (during compile) | `cmake>=3.28`, `ninja`, `ccache`, `pkgconf`, `qt6-svg`, `simde`, `patchelf`, `git`, `vulkan-headers` |
 
 > [!TIP]
 > If you prefer to install build dependencies manually first, use:
 >
 > ```bash
-> sudo pacman -S obs-studio qt6-base curl icu openblas vulkan-icd-loader ocl-icd cmake ninja ccache pkgconf qt6-svg simde patchelf git
+> sudo pacman -S obs-studio qt6-base curl icu openblas vulkan-icd-loader ocl-icd cmake ninja ccache pkgconf qt6-svg simde patchelf git vulkan-headers
 > ```
 >
 > Then run `makepkg -i` (without `-s`) to build and install.

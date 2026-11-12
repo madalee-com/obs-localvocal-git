@@ -24,6 +24,7 @@ makedepends=(
 	'simde'
 	'patchelf'
 	'git'
+	'vulkan-headers'
 )
 source=("obs-localvocal-git::git+https://github.com/royshil/obs-localvocal.git")
 sha256sums=('SKIP')
