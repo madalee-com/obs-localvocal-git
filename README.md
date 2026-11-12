@@ -4,6 +4,8 @@ An AUR package for building and installing [obs-localvocal](https://github.com/r
 
 obs-localvocal is an OBS Studio plugin that provides **real-time Whisper transcription and translation** — it adds a live-caption source to OBS, supporting multiple languages.
 
+<div style="background-color: #f9f5d0; border-left: 4px solid #d4af37; padding: 12px 16px; border-radius: 4px;">
+
 ## ⚠️ Disclaimer
 
 This package was **built using a local AI agent** and has **not been fully vetted**. Use at your own risk:
@@ -12,6 +14,8 @@ This package was **built using a local AI agent** and has **not been fully vette
 - Dependencies and install paths were reverse-engineered from the project's CI configuration.
 - Please test thoroughly before relying on it in production streams.
 - Report any issues by opening an issue on this repo.
+
+</div>
 
 ## Requirements
 
